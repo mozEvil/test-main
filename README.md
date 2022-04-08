@@ -28,7 +28,7 @@
 > путем добавления заголовка "Authorization" со значением "Bearer ваш_токен" как показано на рисунке выше.
 
 > Вместо заголовка так же можно использовать вкладку Auth -> Type (Bearer Token) -> ваш_токен.
-
+---
 ### 3. Ресурсы с разграничением доступа:
 > GET: [localhost:8700/test](http://localhost:8700/test)  
 > свободный доступ для всех
@@ -38,7 +38,7 @@
 
 > GET: [localhost:8700/test/admin](http://localhost:8700/test/admin)  
 > доступ только для ROLE_ADMIN
-
+---
 ### 4. CRUD API:  
 > GET : любой авторизованый  
 > POST, PUT, DELETE: только ROLE_ADMIN
@@ -76,4 +76,4 @@
 
 > DELETE: [localhost:8700/role/{id}](http://localhost:8700/role/1)  
 > удалить Role с id = {id}
-
+---
