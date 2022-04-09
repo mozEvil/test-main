@@ -79,6 +79,7 @@
     </dependencies>
 
 	<build>
+		<finalName>mitra-main</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -96,12 +97,9 @@
 				<groupId>org.flywaydb</groupId>
 				<artifactId>flyway-maven-plugin</artifactId>
 				<configuration>
-					<url>jdbc:postgresql://localhost:5433/postgres?currentSchema=mitra</url>
+					<url>jdbc:postgresql://localhost:5432/mitra</url>
 					<user>postgres</user>
 					<password>root</password>
-					<schemas>
-						<schema>mitra</schema>
-					</schemas>
 				</configuration>
 			</plugin>
 		</plugins>
