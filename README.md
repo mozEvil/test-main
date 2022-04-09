@@ -2,7 +2,7 @@
 > Для взаимодействия с приложением необходимо использовать Postman (или аналог).
 
 ## Руководство по установке:
-> Для развертывания в Докере, скачайте [docker-compose.yml](https://github.com/mozEvil/test-main/releases/download/docker/docker-compose.yml) и запустите, набрав в консоли команду: **docker-compose up**
+> Для развертывания в Докере, скачайте [docker-compose.yml](https://github.com/mozEvil/test-main/releases/download/docker/docker-compose.yml) и запустите, набрав из консоли команду: **docker-compose up**
 
 > Для запустка посредсвом IDE, настройте подключение к вашей базе данных в файле **application.properties**  
   **(!)** для успешной миграции, схема должна быть полностью пуста.
