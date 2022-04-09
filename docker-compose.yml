@@ -2,9 +2,7 @@ version: '2'
 
 services:
   client:
-    image: 'mitra-client:latest'
-    build:
-      context: ./client
+    image: mozevil/mitra-client:latest
     container_name: client
     ports:
       - 8701:8701
@@ -12,9 +10,7 @@ services:
       - APP_MAINAPPURL=http://main:8700
 
   main:
-    image: 'mitra-main:latest'
-    build:
-      context: ./main
+    image: mozevil/mitra-main:latest
     container_name: main
     ports:
       - 8700:8700
@@ -26,7 +22,7 @@ services:
       - SPRING_DATASOURCE_PASSWORD=root
 
   db:
-    image: 'postgres:13.1-alpine'
+    image: postgres:13.1-alpine
     container_name: db
     environment:
       - POSTGRES_DB=mitra
